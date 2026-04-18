@@ -189,7 +189,7 @@ Competitors typically require 3–5 integration points (ATS + assessments vendor
 
 ## 5. Lean Canvas
 
-```
+```text
 ┌────────────────────────────────────────────────────────────────────────────┐
 │                            LEAN CANVAS - ATS                               │
 ├────────────────────────────────────────────────────────────────────────────┤
@@ -470,7 +470,7 @@ Success measures (6-month targets):
 
 ## Business Model Flow
 
-```
+```text
 PROBLEM (Fragmentation, Opacity, Time, Cost)
     ↓
 SOLUTION (Unified + Explainable + Fast + Integrated)
@@ -581,8 +581,6 @@ For these requirements, the most appropriate UML representation is a **Use Case 
 
 ### 10.1 Consolidated Use Case Diagram (PlantUML)
 
-![](assets/20260412_164036_image.png)
-
 #### PlantUML Source Code
 ```plantuml
 @startuml
@@ -648,7 +646,6 @@ UC3 .> UC3D : <<include>>
 
 ### 10.2 Use Case 1 Detail (PlantUML)
 
-![](assets/20260412_164109_image.png)
 #### PlantUML Source Code
 ```plantuml
 @startuml
@@ -678,8 +675,6 @@ UC1 .> UC1D : <<include>>
 ```
 
 ### 10.3 Use Case 2 Detail (PlantUML)
-
-![](assets/20260412_164124_image.png)
 
 #### PlantUML Source Code
 ```plantuml
@@ -711,7 +706,6 @@ UC2 .> UC2E : <<include>>
 
 ### 10.4 Use Case 3 Detail (PlantUML)
 
-![](assets/20260412_164141_image.png)
 #### PlantUML Source Code
 ```plantuml
 @startuml
@@ -774,7 +768,6 @@ UC3 .> UC3E : <<include>>
 
 ### 11.2 Entity Attributes and Relationships
 
-![](assets/20260412_164243_image.png)
 #### PlantUML Source Code
 ```plantuml
 @startuml ATS Data Model
@@ -1329,7 +1322,7 @@ Workers are **idempotent** (safe to retry) and use **exponential backoff** with 
 
 #### Flow 1 — Candidate Applies
 
-```
+```text
 Candidate Portal
   → POST /applications (Load Balancer → Monolith)
     → Application Module: create Application row (status=RECEIVED)
@@ -1353,7 +1346,7 @@ Candidate Portal
 
 #### Flow 2 — Recruiter Publishes a Job
 
-```
+```text
 Recruiter Web App
   → POST /jobs/{id}/publish (Load Balancer → Monolith)
     → Jobs Module: set Job.status = OPEN
@@ -1368,7 +1361,7 @@ Recruiter Web App
 
 #### Flow 3 — Interview Completed → AI Summary
 
-```
+```text
 Interviwer submits feedback
   → POST /interviews/{id}/feedback (Monolith)
     → Interview Module: write InterviewFeedback row
@@ -1427,7 +1420,6 @@ Interviwer submits feedback
 
 The **Application Module** is the most critical component: it drives the entire hiring funnel, triggers AI scoring, and coordinates with every other module. The following C4 Component diagram zooms into its internal structure.
 
-![](assets/20260412_164423_image.png)
 #### PlantUML Source Code
 ```plantuml
 @startuml C4_Application_Module
@@ -1528,7 +1520,6 @@ To prevent the monolith from becoming a "big ball of mud", the following rules a
 
 The Candidate Module is responsible for candidate profile lifecycle, resume ingestion, AI enrichment, search, and talent pool membership. It must support high read throughput for recruiter searches while keeping writes consistent and auditable.
 
-![](assets/20260412_164649_image.png)
 #### PlantUML Source Code
 ```plantuml
 @startuml C4_Candidate_Module
