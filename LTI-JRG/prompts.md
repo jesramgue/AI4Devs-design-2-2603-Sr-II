@@ -2,7 +2,7 @@ Prompts - LTI Jesus Ramirez Guerrero
 # Environment
  IDE: Visual Studio Code using GitHub Copilot using GPT-5.4 - Thinking Effort Medium 
 
-# 2. Simplify PRD
+# 1. Simplify PRD
 I felt that the result of the previous design session was not simple enough for the AI ​​to focus on the real goal (user stories and ticket splitting), with the intention of making agents more productive (better results), so I decided to simplify the LTI-JRG.md documentation a bit.
 
 ## Prompt
