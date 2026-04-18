@@ -65,7 +65,7 @@ Use this order when building an MVP map:
 ## Output Format
 Return the result in this structure:
 1. Story map backbone (ordered activities)
-2. Five to ten user stories (or user-requested count)
+2. User-requested count user stories.
 3. Acceptance criteria (Given/When/Then)
 4. Complexity estimate (S/M/L)
 5. INVEST evaluation (brief)
