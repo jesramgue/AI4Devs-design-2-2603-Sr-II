@@ -1059,7 +1059,7 @@ TalentPool      ||--o{ TalentPoolMember     : "contains"
 
 **Summary:** A single deployable backend application organized into well-defined internal modules (Jobs, Applications, AI, Messaging, Integrations), backed by a task queue for all async operations and a read replica for reporting queries.
 
-**Core architecture principals applied (from System Design Primer):**
+**Core architecture principles applied (from System Design Primer):**
 
 - Horizontal scaling via load balancer in front of stateless web tier
 - Cache-aside (Redis) for hot data: job listings, candidate scores, session tokens
