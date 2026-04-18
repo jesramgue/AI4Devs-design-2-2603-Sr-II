@@ -40,7 +40,7 @@ Write the output into a Markdown file "LTI-JRG/UserStories-JRG.md"
 # 3. User Story Mapping
 I considered the backlog a bit flat, losing the complete user journey. For that and to facilitate the discussion with the team about what the MVP truly is I considered to create a the User Story Mapping to visualise better the dependencies and gaps in functionality.
 
-For that I created a user-story-mapping-skill.md with what I expect the agent to produce and the structure. I considered in the first version to use Mermaid to check if it was powerful and easy to maitain enough.
+For that I created a user-story-mapping-skill.md with what I expect the agent to produce and the structure. I considered in the first version to use Mermaid to check if it was powerful and easy to maintain enough.
 Check [LTI-JRG/user-story-mapping.md](./user-stories-mapping-skill.md)
 
 ## Prompt
