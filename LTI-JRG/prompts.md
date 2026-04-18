@@ -45,7 +45,7 @@ Check [LTI-JRG/user-stories-mapping-skill.md](./user-stories-mapping-skill.md)
 
 ## Prompt
 Create a User Story Map for that use the user stories created, and indicate which ones would go in the MVP versus version 2
-User the new Skill created LTI-JRG/user-stories-mapping-skill.md
+Use the new Skill created LTI-JRG/user-stories-mapping-skill.md
 
 Add the output in "LTI-JRG/UserStories-JRG.md" after the last header
 
